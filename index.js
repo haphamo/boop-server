@@ -46,6 +46,26 @@ app.use("/api/pets", petsRoutes(db));
 // Deserialize cookie from the browser
 // app.use(passport.session());
 
+// passport.use(new FacebookStrategy({
+//   clientID: process.env.FACEBOOK_CLIENT_ID,
+//   clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
+//   callbackURL: "http://localhost:3000/",
+//   profileFields: ['id', 'displayName','email'],
+//   enableProof: true
+// },
+//   function(accessToken, refreshToken, profile, cb) {
+//     User.findOrCreate({ facebookId: profile.id }, function (err, user) {
+//       return cb(err, user);
+//     })
+//   }
+// ))
+// passport.serializeUser(function(user, cb) {
+//   cb(null, user)
+// })
+// passport.deserializeUser(function(obj, cb) {
+//   cb(null, obj)
+// })
+
 // Use CORS and File Upload modules here
 
 app.use(cors({
