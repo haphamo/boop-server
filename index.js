@@ -42,9 +42,9 @@ app.use("/api/pets", petsRoutes(db));
 // app.use("/api/auth", authRoutes(db));
 
 // Initialize Passport
-app.use(passport.initialize());
+// app.use(passport.initialize());
 // Deserialize cookie from the browser
-app.use(passport.session());
+// app.use(passport.session());
 
 // Use CORS and File Upload modules here
 
