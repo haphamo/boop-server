@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "boopserver",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,7 +13,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "cookie-session": "^1.4.0",
+    "core-util-is": "^1.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "pg": "^7.14.0"
+    "express-pino-logger": "^4.0.0",
+    "path": "^0.12.7",
+    "pg": "^7.14.0",
+    "pino": "^5.16.0",
+    "webpack-dev-server": "^3.10.3"
   }
 }
