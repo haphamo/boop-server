@@ -4,7 +4,7 @@ require('dotenv').config();
 // Web server config
 const PORT = process.env.PORT || 3001;
 const express = require('express');
-const passport = require('passport');
+// const passport = require('passport');
 const pino = require('express-pino-logger')();
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
